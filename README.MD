@@ -8,7 +8,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:/?#[]@!$&'()*
 ##
 Этот URL-адрес недопустим:
 ~~~
-/shop/product?nameFilter=^E.*$
+http://localhost:8080/shop/product?nameFilter=^E.*$
 ~~~
 Таким образом, кодирование должно проходить на стороне клиента, и выглядеть в током формате.
 

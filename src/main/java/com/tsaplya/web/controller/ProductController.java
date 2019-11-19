@@ -13,7 +13,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @RestController
 public class ProductController {
-    private SearchService searchService;
+    private final SearchService searchService;
 
     @Autowired
     public ProductController(SearchService searchService) {

@@ -8,7 +8,7 @@ import java.util.List;
 
 @Component
 public class SearchService {
-    private SearchProductsByRegex searchProductsByRegex;
+    private final SearchProductsByRegex searchProductsByRegex;
 
     @Autowired
     public SearchService(SearchProductsByRegex searchProductsByRegex) {

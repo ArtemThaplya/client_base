@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 
 @Component
 public class SearchProductsByRegexImp implements SearchProductsByRegex {
-    private ProductDao productDao;
+    private final ProductDao productDao;
 
     @Autowired
     public SearchProductsByRegexImp(ProductDao productDao) {

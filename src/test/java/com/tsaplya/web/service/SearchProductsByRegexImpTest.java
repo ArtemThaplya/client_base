@@ -15,12 +15,12 @@ import static org.mockito.Mockito.when;
 
 
 public class SearchProductsByRegexImpTest {
-    private List<Product> expectedProducts = new ArrayList<>();
+    private final List<Product> expectedProducts = new ArrayList<>();
     private static final String condition = "^E.*$";
-    private Product productWithNameStartFromE = new Product();
-    private Product productWithNameStartFromA = new Product();
-    private ProductDao productDaoMock = mock(ProductDao.class);
-    private SearchProductsByRegexImp searchProductsByRegexImp = new SearchProductsByRegexImp(productDaoMock);
+    private final Product productWithNameStartFromE = new Product();
+    private final Product productWithNameStartFromA = new Product();
+    private final ProductDao productDaoMock = mock(ProductDao.class);
+    private final SearchProductsByRegexImp searchProductsByRegexImp = new SearchProductsByRegexImp(productDaoMock);
 
     @Before
     public void setUp() {
